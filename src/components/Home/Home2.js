@@ -37,7 +37,7 @@ function Home2() {
               </i>
               <br />
               <br />
-              Siempre que puedo, me apalanco en mi pasión por desarrollar productos con <b className="purple">Node.js</b> y
+              Siempre que puedo, me apoyo en mi pasión por desarrollar productos con <b className="purple">Node.js</b> y
               <i>
                 <b className="purple">
                   {" "}
@@ -52,7 +52,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid" alt="avatar" style={{ borderRadius: "50%" }} />
             </Tilt>
           </Col>
         </Row>
