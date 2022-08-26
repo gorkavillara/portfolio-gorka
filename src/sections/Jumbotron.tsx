@@ -44,7 +44,12 @@ const Section = styled.section`
 `
 
 const Row = styled.div`
-  padding: 7rem;
+    padding: 7rem;
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   padding-bottom: 0;
 `
 

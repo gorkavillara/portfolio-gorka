@@ -4,6 +4,10 @@ import styled from "styled-components"
 
 const FooterDiv = styled.div`
   display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 3rem;
