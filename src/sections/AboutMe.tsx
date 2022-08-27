@@ -25,6 +25,9 @@ const CTAText = styled.div`
 const RightAboutMe = styled.div`
   display: grid;
   place-content: center;
+  @media (max-width: 768px) {
+      margin-bottom: 5rem;
+    }
 `
 
 const Row = styled.div`
@@ -32,7 +35,6 @@ const Row = styled.div`
   .bottom-line {
     position: absolute;
     bottom: 0;
-    width: 100vw;
     height: 50%;
   }
 `

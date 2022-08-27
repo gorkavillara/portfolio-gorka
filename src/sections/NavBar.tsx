@@ -18,11 +18,14 @@ const RightNav = styled.div`
   justify-content: flex-end;
   align-items: center;
   gap: 1rem;
+  @media (max-width: 991px) {
+    padding: 2rem;
+  }
 `
 
 const NavBar: React.FC = () => (
-  <nav className="container navbar navbar-expand-lg p-4 fixed-top">
-    <NBar className="container-fluid p-4 rounded-4">
+  <nav className="navbar navbar-expand-lg p-4 fixed-top">
+    <NBar className="container p-4 rounded-4">
       <Brand className="col">Gorka Villar</Brand>
       <button
         className="navbar-toggler"

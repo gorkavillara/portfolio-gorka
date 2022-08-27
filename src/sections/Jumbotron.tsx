@@ -44,12 +44,12 @@ const Section = styled.section`
 `
 
 const Row = styled.div`
-    padding: 7rem;
+  padding: 7rem;
   @media (max-width: 768px) {
+    padding-top: 10rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
-
   padding-bottom: 0;
 `
 
@@ -85,6 +85,9 @@ const Color = styled.span`
 const SubRow = styled.div`
   margin-top: -1rem;
   padding: 3rem 6rem;
+  @media (max-width: 768px) {
+    padding: 3rem 2rem;
+  }
   width: 100%;
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), white);
   backdrop-filter: blur(8px);
@@ -93,12 +96,18 @@ const SubRow = styled.div`
 const SubRowTitle = styled.span`
   font-weight: 600;
   font-size: 1.2rem;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `
 
 const SubRowPlatforms = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
   gap: 1rem;
   padding: 1.5rem 0;
 `
@@ -149,7 +158,11 @@ const Jumbotron: React.FC = () => (
         </SubRowTitle>
         <SubRowPlatforms>
           {platforms.map((platform: IPlatform) => (
-            <Platform key={platform.name} color={platform.color} target="_blank">
+            <Platform
+              key={platform.name}
+              color={platform.color}
+              target="_blank"
+            >
               {platform.icon}
             </Platform>
           ))}

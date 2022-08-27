@@ -5,16 +5,22 @@ import Jumbotron from "./sections/Jumbotron"
 import Services from "./sections/Services"
 import AboutMe from "./sections/AboutMe"
 import Footer from "./sections/Footer"
+import styled from "styled-components"
+
+const AppContainer = styled.div`
+  max-width: 100vw;
+  overflow-x: hidden;
+`
 
 function App() {
   return (
-    <div className="container-fluid p-0">
+    <AppContainer>
       <NavBar />
       <Jumbotron />
       <Services />
       <AboutMe />
       <Footer />
-    </div>
+    </AppContainer>
   )
 }
 
